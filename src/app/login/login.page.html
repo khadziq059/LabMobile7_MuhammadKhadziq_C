@@ -1,0 +1,87 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Welcome Back</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="login-container">
+    <!-- Logo/Brand Section -->
+    <div class="logo-container ion-text-center">
+      <ion-icon name="person-circle-outline" style="font-size: 80px; color: var(--ion-color-primary)"></ion-icon>
+      <h1>Sign In</h1>
+      <p>Please login to continue</p>
+    </div>
+
+    <!-- Login Form Card -->
+    <ion-card>
+      <ion-card-content>
+        <form>
+          <ion-item lines="full" class="ion-margin-bottom">
+            <ion-label position="floating">Username</ion-label>
+            <ion-input type="text" [(ngModel)]="username" name="username" required="required" 
+                       class="custom-input">
+            </ion-input>
+          </ion-item>
+
+          <ion-item lines="full" class="ion-margin-bottom">
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" [(ngModel)]="password" name="password" required="required"
+                       class="custom-input">
+            </ion-input>
+          </ion-item>
+
+          <ion-button type="submit" expand="block" shape="round" class="ion-margin-top" (click)="login()">
+            <ion-icon name="log-in-outline" slot="start"></ion-icon>
+            Login
+          </ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+<style>
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-container {
+    margin-bottom: 30px;
+  }
+
+  .logo-container h1 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--ion-color-dark);
+  }
+
+  .logo-container p {
+    color: var(--ion-color-medium);
+  }
+
+  ion-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+
+  ion-button[type="submit"] {
+    margin-top: 20px;
+    height: 50px;
+    --border-radius: 25px;
+  }
+
+  .custom-input {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    margin-top: 5px;
+  }
+
+  ion-item {
+    --border-radius: 10px;
+    --background: var(--ion-color-light);
+    margin-bottom: 15px;
+  }
+</style>
