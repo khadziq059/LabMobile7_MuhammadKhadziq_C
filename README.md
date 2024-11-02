@@ -1,7 +1,7 @@
 # Screnshoot Hasil 
 
-<img src="signin.png" alt="Deskripsi gambar" width="500">
-<img src="home.png" alt="Deskripsi gambar" width="500">
+<img src="signin.png" alt="Deskripsi gambar" width="300">
+<img src="home.png" alt="Deskripsi gambar" width="300">
 
 # PENJELASAN CARA KERJA LOGIN PADA APLIKASI
 
